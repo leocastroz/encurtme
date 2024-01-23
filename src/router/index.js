@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../pages/HomePage.vue'
+import LoginPage from '../pages/LoginPage.vue'
+import Guard from '../services/middleware.js'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,8 +12,14 @@ const router = createRouter({
       component: HomePage
     },
     {
+      path: '/login',
+      name: 'login',
+      component: LoginPage
+    },
+    {
       path: '/sobre',
       name: 'sobre',
+      beforeEnter: Guard.auth,
       component: () => import('../pages/AboutPage.vue')
     }
   ]
