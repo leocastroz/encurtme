@@ -17,10 +17,10 @@ const router = createRouter({
       component: LoginPage
     },
     {
-      path: '/sobre',
-      name: 'sobre',
+      path: '/painel',
+      name: 'painel',
       beforeEnter: Guard.auth,
-      component: () => import('../pages/AboutPage.vue')
+      component: () => import('../pages/PainelPage.vue')
     }
   ]
 })

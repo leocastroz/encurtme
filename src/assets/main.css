@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Simple Reset */
+* {
+  margin: 0;
+  padding: 0;
+  list-style:none; 
+  box-sizing: border-box;
+  vertical-align:baseline;
+}
+
+body {
+  background-color: #191919;
+}

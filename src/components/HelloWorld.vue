@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div>
-    texto do component
+  <div class="tw-bg-red-300 tw-text-center tw-my-10 tw-text-2xl">
+    ENCURTME
   </div>
 </template>
 
