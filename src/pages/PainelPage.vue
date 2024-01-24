@@ -1,13 +1,12 @@
 <template>
   <div>
-    <h1 class="tw-bg-red-600 tw-text-blue-300 tw-w-300">
-      autenticado
+    <h1 class="tw-uppercase tw-text-center tw-text-xs tw-text-green-400 animate__animated animate__bounce">
+      usuário - autenticado
     </h1>
-    <ShortenerS />
+    <ShortenerUrl />
   </div>
 </template>
 
 <script setup>
-import ShortenerS from '@/components/ShortenerS.vue';
-
+import ShortenerUrl from '@/components/ShortenerUrl.vue';
 </script>

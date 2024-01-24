@@ -1,13 +1,8 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld />
-      <nav class="tw-bg-blue-500 tw-text-center tw-font-bold">
+      <TopSide />
+      <nav class="tw-my-10 tw-text-neutral-700 tw-text-center tw-font-bold animate__animated animate__bounce">
         <RouterLink class="tw-mx-2" to="/">HOME</RouterLink>
         <RouterLink class="tw-mx-2" to="/login">LOGIN</RouterLink>
       </nav>
@@ -15,3 +10,8 @@ import HelloWorld from './components/HelloWorld.vue'
   </header>
   <RouterView />
 </template>
+
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import TopSide from './components/TopSide.vue'
+</script>
