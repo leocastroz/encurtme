@@ -14,3 +14,8 @@
 body {
   background-color: #191919;
 }
+
+nav a.router-link-exact-active {
+  color: #6366f1;
+  border-bottom: 2px dashed #6366f1;
+}

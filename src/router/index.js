@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../pages/HomePage.vue'
 import LoginPage from '../pages/LoginPage.vue'
+import PainelPage from '../pages/PainelPage.vue'
 import Guard from '../services/middleware.js'
 
 const router = createRouter({
@@ -20,7 +21,7 @@ const router = createRouter({
       path: '/painel',
       name: 'painel',
       beforeEnter: Guard.auth,
-      component: () => import('../pages/PainelPage.vue')
+      component: PainelPage
     }
   ]
 })
