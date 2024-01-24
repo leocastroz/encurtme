@@ -1,35 +1,43 @@
 # encurtme
 
-This template should help get you started developing with Vue 3 in Vite.
+#### Projeto desebvolvido com a finalidade de encurtar links extensos.
 
-## Recommended IDE Setup
+![](./public/github_img.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## UTILIZANDO O PROJETO
 
-## Customize configuration
+#### node v18.19.0
+#### npm v10.2.3
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Bibliotecas instaladas.
+- vue-toastification.
+- tailwind-css
+- animate.css
+- axios
+- https://app.bitly.com/settings/api (api para o encurtador). Existe um limite de 12 requisições para o `POST`. Caso o encurtador não funcione, basta criar uma conta, ir neste caminho da URL e clicar em `Generate Token`. Após isso, basta substituir o valor do campo `VITE_TOKEN`, localizado no `.env`.
 
-## Project Setup
+## Configuração do Projeto
 
+##### Clone SSH
+```sh
+git@github.com:leocastroz/encurtme.git
+```
+
+##### Instalação
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+##### Compilar e recarregar
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+##### Compilar e minimizar
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+##### Caso sinta à necessidade de ajuda com projeto, para preparar seu ambiente, me chame no LinkedIn <a href="https://www.linkedin.com/in/leoscastro/">Leonardo Castro</a>.
